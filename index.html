@@ -30,7 +30,10 @@
 				accessToken: 'pk.eyJ1Ijoia3RzaXRzaSIsImEiOiJjajJsd2xsOHMwMDE4MnFvenIxMWExMHJkIn0.dlgDvxw9_SUkCKznhvoGuw'
 				}).addTo(mymap);
 
-				L.geoJSON(lol).addTo(map);
+				L.geoJSON(world.geo.json, {
+					style: function (feature) {
+						return {color: '#0000FF' };
+					}}).addTo(map);
 
 			</script>
 		</div>
