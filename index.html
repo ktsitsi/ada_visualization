@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<div id="mapid"></div>
+		<div id="mapid">
 			var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 			
 			L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -22,5 +22,6 @@
 			id: 'mapbox.streets',
 			accessToken: 'your.mapbox.access.token'
 			}).addTo(mymap);
+		</div>
 	<body>
 </html>
