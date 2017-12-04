@@ -9,6 +9,8 @@
 		integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
 		crossorigin=""></script>
 
+		<script src="world.js" type="text/javascript"></script>
+
 		<style>
 			#mapid { height: 560px; }
 		</style>
@@ -16,9 +18,9 @@
 
 	<body>
 		<div id="mapid">
-
-			<script src="world.js" type="text/javascript"></script>
+		
 			<script>
+
 				var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 				L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
