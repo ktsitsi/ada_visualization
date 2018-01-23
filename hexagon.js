@@ -3,24 +3,28 @@
 var chart = AmCharts.makeChart( "hexagondiv", {
   "type": "radar",
   "theme": "dark",
+  "titles": [{
+    "text": "Conflicts on continent level",
+    "size": 14
+  }],
   "dataProvider": [ {
-    "country": "Czech Republic",
-    "litres": 156.9
+    "continent": "Asia",
+    "conflicts": 244
   }, {
-    "country": "Ireland",
-    "litres": 131.1
+    "continent": "Europe",
+    "conflicts": 33
   }, {
-    "country": "Germany",
-    "litres": 115.8
+    "continent": "Africa",
+    "conflicts": 207
   }, {
-    "country": "Australia",
-    "litres": 109.9
+    "continent": "Americas",
+    "conflicts": 41
   }, {
-    "country": "Austria",
-    "litres": 108.3
+    "continent": "Middle East",
+    "conflicts": 82
   }, {
-    "country": "UK",
-    "litres": 99
+    "continent": "Australia",
+    "conflicts": 1
   } ],
   "valueAxes": [ {
     "axisTitleOffset": 20,
@@ -29,12 +33,12 @@ var chart = AmCharts.makeChart( "hexagondiv", {
   } ],
   "startDuration": 2,
   "graphs": [ {
-    "balloonText": "[[value]] litres of beer per year",
+    "balloonText": "[[value]] conflicts on continent level",
     "bullet": "round",
     "lineThickness": 2,
-    "valueField": "litres"
+    "valueField": "conflicts"
   } ],
-  "categoryField": "country",
+  "categoryField": "continent",
   "export": {
     "enabled": false
   }
